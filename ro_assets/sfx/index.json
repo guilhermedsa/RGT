@@ -1,0 +1,362 @@
+{
+ "swing_dagger": {
+  "file": "_attack_dagger.wav",
+  "official": true,
+  "gain_db": -1.8
+ },
+ "swing_fist": {
+  "file": "attack_fist.wav",
+  "official": true,
+  "gain_db": 5.6
+ },
+ "hit_dagger": {
+  "file": "_hit_dagger.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "hit_fist": {
+  "file": "_hit_fist1.wav",
+  "official": true,
+  "gain_db": -4
+ },
+ "cast_fire_bolt": {
+  "file": "effect/ef_firearrow.wav",
+  "official": true,
+  "gain_db": -0.3
+ },
+ "hit_fire": {
+  "file": "effect/ef_firehit.wav",
+  "official": true,
+  "gain_db": -3.7
+ },
+ "cast_cold_bolt": {
+  "file": "effect/ef_icearrow.wav",
+  "official": true,
+  "gain_db": 1.1
+ },
+ "hit_cold": {
+  "file": "effect/ef_frostdiver2.wav",
+  "official": true,
+  "gain_db": -4.9
+ },
+ "soul_strike": {
+  "file": "effect/ef_soulstrike.wav",
+  "official": true,
+  "gain_db": -3.5
+ },
+ "magnum_break": {
+  "file": "effect/ef_magnumbreak.wav",
+  "official": true,
+  "gain_db": -0.6
+ },
+ "level_up": {
+  "file": "levelup.wav",
+  "official": true,
+  "gain_db": 1.6
+ },
+ "ui_click": {
+  "file": "버튼소리.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "swing_sword": {
+  "file": "_attack_sword.wav",
+  "official": true,
+  "gain_db": 0.5
+ },
+ "hit_sword": {
+  "file": "_hit_sword.wav",
+  "official": true,
+  "gain_db": 1
+ },
+ "swing_mace": {
+  "file": "_attack_mace.wav",
+  "official": true,
+  "gain_db": -5.3
+ },
+ "hit_mace": {
+  "file": "_hit_mace.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "swing_bow": {
+  "file": "_attack_bow.wav",
+  "official": true,
+  "gain_db": 1.3
+ },
+ "hit_arrow": {
+  "file": "_hit_arrow.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "swing_rod": {
+  "file": "_attack_rod.wav",
+  "official": true,
+  "gain_db": -1.4
+ },
+ "hit_rod": {
+  "file": "_hit_rod.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "bash": {
+  "file": "effect/ef_bash.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "provoke": {
+  "file": "effect/swordman_provoke.wav",
+  "official": true,
+  "gain_db": 2.4
+ },
+ "bowling_bash": {
+  "file": "bowling_bash.wav",
+  "official": true,
+  "gain_db": 0.6
+ },
+ "heal": {
+  "file": "_heal_effect.wav",
+  "official": true,
+  "gain_db": 3.3
+ },
+ "blessing": {
+  "file": "effect/ef_blessing.wav",
+  "official": true,
+  "gain_db": 1.5
+ },
+ "increase_agi": {
+  "file": "effect/ef_incagility.wav",
+  "official": true,
+  "gain_db": 3.9
+ },
+ "arrow_shower": {
+  "file": "arrowstorm.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "thunderstorm": {
+  "file": "effect/ef_thunderstorm.wav",
+  "official": true,
+  "gain_db": -5.2
+ },
+ "endure": {
+  "file": "effect/ef_endure.wav",
+  "official": true,
+  "gain_db": -2.4
+ },
+ "napalm_beat": {
+  "file": "effect/ef_napalmbeat.wav",
+  "official": true,
+  "gain_db": -3.7
+ },
+ "lightning_bolt": {
+  "file": "effect/ef_lightbolt.wav",
+  "official": true,
+  "gain_db": -2.4
+ },
+ "fire_ball": {
+  "file": "effect/ef_fireball.wav",
+  "official": true,
+  "gain_db": 2.9
+ },
+ "frost_diver": {
+  "file": "effect/ef_frostdiver.wav",
+  "official": true,
+  "gain_db": -2.4
+ },
+ "jupitel_thunder": {
+  "file": "effect/hyper_novice/hu_jupitel_thunder_storm.wav",
+  "official": true,
+  "gain_db": 2.3
+ },
+ "storm_gust": {
+  "file": "effect/wizard_stormgust.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "meteor_storm": {
+  "file": "effect/wizard_meteor.wav",
+  "official": true,
+  "gain_db": 0.3
+ },
+ "lord_of_vermilion": {
+  "file": "effect/ef_thunderstorm.wav",
+  "official": true,
+  "gain_db": -5.2
+ },
+ "kyrie_eleison": {
+  "file": "effect/priest_kyrie_eleison_a.wav",
+  "official": true,
+  "gain_db": -3.2
+ },
+ "sanctuary": {
+  "file": "effect/priest_sanctuary.wav",
+  "official": true,
+  "gain_db": 2.6
+ },
+ "resurrection": {
+  "file": "effect/priest_resurrection.wav",
+  "official": true,
+  "gain_db": 0.7
+ },
+ "magnus_exorcismus": {
+  "file": "effect/priest_magnus.wav",
+  "official": true,
+  "gain_db": 3
+ },
+ "angelus": {
+  "file": "effect/ef_angelus.wav",
+  "official": true,
+  "gain_db": 2.5
+ },
+ "blitz_beat": {
+  "file": "effect/hunter_blitzbeat.wav",
+  "official": true,
+  "gain_db": -3.5
+ },
+ "ankle_snare": {
+  "file": "effect/hunter_anklesnare.wav",
+  "official": true,
+  "gain_db": -2.2
+ },
+ "land_mine": {
+  "file": "effect/hunter_landmine.wav",
+  "official": true,
+  "gain_db": -2.4
+ },
+ "brandish_spear": {
+  "file": "effect/knight_brandish_spear.wav",
+  "official": true,
+  "gain_db": 1.6
+ },
+ "two_hand_quicken": {
+  "file": "effect/knight_twohandquicken.wav",
+  "official": true,
+  "gain_db": -0.5
+ },
+ "potion": {
+  "file": "se_drink_potion.wav",
+  "official": true,
+  "gain_db": 4.6
+ },
+ "coin": {
+  "file": "se_get_coin.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "warp": {
+  "file": "effect/ef_teleportation.wav",
+  "official": true,
+  "gain_db": -1.7
+ },
+ "die_poring": {
+  "file": "poring_die.wav",
+  "official": true,
+  "gain_db": -1.8
+ },
+ "die_lunatic": {
+  "file": "lunatic_die.wav",
+  "official": true,
+  "gain_db": -2.8
+ },
+ "die_fabre": {
+  "file": "fabre_die.wav",
+  "official": true,
+  "gain_db": -0.9
+ },
+ "die_condor": {
+  "file": "condor_die.wav",
+  "official": true,
+  "gain_db": -1.4
+ },
+ "die_spore": {
+  "file": "spore_die.wav",
+  "official": true,
+  "gain_db": -3.7
+ },
+ "die_roda_frog": {
+  "file": "roda_frog_die.wav",
+  "official": true,
+  "gain_db": -5.4
+ },
+ "die_chonchon": {
+  "file": "chocho_die.wav",
+  "official": true,
+  "gain_db": 0.3
+ },
+ "die_mandragora": {
+  "file": "mandragora_die.wav",
+  "official": true,
+  "gain_db": -2.7
+ },
+ "die_tarou": {
+  "file": "tarou_die.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "die_scorpion": {
+  "file": "scorpion_die.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "die_picky": {
+  "file": "picky_die.wav",
+  "official": true,
+  "gain_db": -0.2
+ },
+ "die_desert_wolf_b": {
+  "file": "desert_wolf_b_die.wav",
+  "official": true,
+  "gain_db": 1.4
+ },
+ "die_muka": {
+  "file": "muka_die.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "die_mummy": {
+  "file": "mummy_die.wav",
+  "official": true,
+  "gain_db": -4.4
+ },
+ "die_isis": {
+  "file": "isis_die.wav",
+  "official": true,
+  "gain_db": 2.5
+ },
+ "die_matyr": {
+  "file": "matyr_die.wav",
+  "official": true,
+  "gain_db": -6
+ },
+ "die_marduk": {
+  "file": "marduk_die.wav",
+  "official": true,
+  "gain_db": 6
+ },
+ "die_osiris": {
+  "file": "osiris_die.wav",
+  "official": true,
+  "gain_db": -4.6
+ },
+ "die_requiem": {
+  "file": "requiem_die.wav",
+  "official": true,
+  "gain_db": 3.1
+ },
+ "die_pasana": {
+  "file": "pasana_die.wav",
+  "official": true,
+  "gain_db": 2.2
+ },
+ "die_minorous": {
+  "file": "minorous_die.wav",
+  "official": true,
+  "gain_db": 2.9
+ },
+ "die_pharaoh": {
+  "file": "pharaoh_die.wav",
+  "official": true,
+  "gain_db": -2.3
+ }
+}

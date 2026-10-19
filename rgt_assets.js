@@ -20,7 +20,7 @@ window.RGT_SOURCES = window.RGT_SOURCES || [];
 	const url = (rel) => base(rel) + rel.split("/").map(encodeURIComponent).join("/");
 	// What was downloaded, for the console; with ?trace in the URL, rgtTrace lists each file the
 	// game had to wait for.
-	window.rgtStats = { now: 0, ahead: 0, bytes: 0, ms_waiting: 0 };
+	window.rgtStats = { now: 0, ahead: 0, packs: 0, boot: 0, bytes: 0, ms_waiting: 0 };
 	window.RGT_TRACE = window.RGT_TRACE || /[?&]trace\b/.test(location.search);
 	window.rgtTrace = [];
 
@@ -88,4 +88,57 @@ window.RGT_SOURCES = window.RGT_SOURCES || [];
 
 	// Files of a prefetch job still on their way.
 	window.rgtLeft = (id) => jobs[id] || 0;
+
+	// Packs (tools/web/make_manifest.mjs), one after another in the background: each one many
+	// small files in a single download, stored before the game asks for them.
+	const loadPacks = async (names) => {
+		for (const name of names) {
+			try {
+				const response = await fetch(url("packs/" + name + ".pack"));
+				if (!response.ok) {
+					continue;
+				}
+				const data = new Uint8Array(await response.arrayBuffer());
+				const length = new DataView(data.buffer).getUint32(0, true);
+				const header = JSON.parse(new TextDecoder().decode(data.subarray(4, 4 + length)));
+				let at = 4 + length;
+				for (const [rel, size] of header) {
+					engine.copyToFS(DIR + rel, data.slice(at, at + size));
+					at += size;
+				}
+				rgtStats.packs++;
+				rgtStats.bytes += data.length;
+			} catch (e) {
+				console.warn("rgt pack", name, e);
+			}
+		}
+	};
+
+	// Before the game starts: the files web.json lists under "boot" (and the manifest), downloaded
+	// along with the engine, so the title screen doesn't wait for them one by one; the engine
+	// starts once they are in. Then the packs.
+	document.addEventListener("DOMContentLoaded", () => {
+		if (typeof engine === "undefined") {
+			return;
+		}
+		const none = { boot: [], packs: [] };
+		const ready = fetch(url("web.json"))
+			.then((r) => (r.ok ? r.json() : none))
+			.catch(() => none)
+			.then((web) =>
+				Promise.allSettled(["manifest.json", ...web.boot].map((rel) => engine.preloadFile(url(rel), DIR + rel))).then(
+					() => web,
+				),
+			);
+		const start = engine.start;
+		engine.start = function (...args) {
+			return ready.then((web) =>
+				start.apply(this, args).then((result) => {
+					rgtStats.boot = web.boot.length;
+					loadPacks(web.packs);
+					return result;
+				}),
+			);
+		};
+	});
 })();
